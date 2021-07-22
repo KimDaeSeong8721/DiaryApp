@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘의 방문지"
+        android:textSize="30dp"
+        android:fontFamily="@font/ridibatang"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_area"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/darker_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/down_arrow" />
+
+        <Spinner
+            android:id="@+id/spinner_destination"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/btn_writing_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="다이어리 쓰기"
+            android:fontFamily="@font/ridibatang"
+            android:textSize="20dp"/>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/btn_take_a_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="사진 남기기"
+            android:textSize="20dp"
+            android:fontFamily="@font/ridibatang"/>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/btn_reading_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="다이어리 보기"
+            android:fontFamily="@font/ridibatang"
+            android:textSize="20dp"/>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
